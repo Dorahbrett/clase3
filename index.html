@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Mi primer Formulario</h1>
+    <form action="https://formspree.io/f/movqqbpw" method="POST">
+        <label for="">Nombre:</label>
+        <!-- imput tipo texto -->
+        <input type="text" placeholder="Escriba su nombre" required maxlength="10" minlength="3" id="nombre" name="nombre">
+        <br>
+        <label for="">Password:</label>
+        <!-- imput tipo password -->
+        <input type="password" placeholder="Escriba su contrasenia" required maxlength="10" minlength="3" id="password" name="Password">
+        <br>
+        <label for="">Correo Electronico:</label>
+        <!-- imput tipo mail -->
+        <input type="email" placeholder="Escriba su correo" required maxlength="25" minlength="3" id="mail" name="email">
+        <br>
+        <label for="">Edad:</label>
+        <!-- imput tipo number -->
+        <input type="number" placeholder="Escriba su Edad" required maxlength="99" minlength="10" id="edad" name="edad">
+        <!--se pueden colocar propiedades al input como readonly o value -->
+        <br>
+        <label for="">Archivo</label>
+        <input type="file" id="" name="">
+        <br>
+        <p>Radio Buttons</p>
+        <!-- colocar el mismo name hace que solo puedas seleccionar uno -->
+        <label>PHP</label>
+        <input type="radio" name="lenguaje" id="" value="PHP">
+        <label>Java</label>
+        <input type="radio" name="lenguaje" id="" value="Java">
+        <label>Phyton</label>
+        <input type="radio" name="lenguaje" id="" value="Phyton">
+        
+
+        <p>Checkbox</p>
+        <!-- colocar checkbox te deja seleccionar varias opciones -->
+        <label for="">Maniana</label>
+        <input type="checkbox">
+        <label for="">Tarde</label>
+        <input type="checkbox">
+        <label for="">Noche</label>
+        <input type="checkbox">
+
+        <select name="" id="">
+        <option value="">Buenos Aires</option>
+        <option value="">Entre Rios</option>
+        <option value="">Formosa</option>
+        </select>
+        <br>
+
+        <label for="">Comentarios</label>
+        <textarea name="" id="" rows="4" cols="50"></textarea>
+
+        
+<!-- dos formas de hacer el submit -->
+        <input type="submit">
+        <button type="submit">Enviar</button>
+    
+    </form>
+    
+</body>
+</html>
